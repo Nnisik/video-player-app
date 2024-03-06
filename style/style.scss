@@ -1,4 +1,76 @@
+$black: rgb(20, 20, 20);
+$white: rgb(247, 247, 247);
+$grey: rgb(119, 119, 119);
+
 * {
     margin: 0;
     padding: 0;
+}
+
+body {
+    background: $black;
+    color: $white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 7vh 5vh;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 30%;
+}
+
+.menu_title {
+    font-size: 100px;
+    height: fit-content;
+}
+
+.menu_title ul {
+    list-style: none;
+    line-height: 80%;
+}
+
+.menu_title ul::first-line {
+    color: $grey;
+}
+
+.menu_city-selection {
+    margin: 5vh 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.city-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.city-info {
+    width: 50%;
+    height: 100%;
+}
+
+.city-name {
+    font-size: 45px;
+}
+
+.city-about {
+    font-size: 19px;
+}
+
+.city-img {
+    width: 50%;
+    aspect-ratio: 16/9;
+    background-color: red;
+}
+
+.active {
+    background: $grey;
 }
