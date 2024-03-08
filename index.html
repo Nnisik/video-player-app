@@ -12,17 +12,41 @@
         <div class="video-player_video-container"></div>
         <article class="video-player_search">
           <article class="current-location">
-            <h3>Город</h3>
+            <h3 class="current-location-header">Город</h3>
             <ul>
               <li>Санкт-Петербург</li>
             </ul>
           </article>
           <article class="time-selection">
-            <input type="checkbox" name="time-morning" id="morning" />
-            <input type="checkbox" name="time-day" id="day" />
-            <input type="checkbox" name="time-nigth" id="nigth" />
+            <label for="time-morning">
+              <input
+                type="checkbox"
+                class="time-selection-checkbox"
+                name="time-morning"
+                id="morning"
+              />
+              Утро
+            </label>
+            <label for="time-day">
+              <input
+                type="checkbox"
+                class="time-selection-checkbox"
+                name="time-day"
+                id="day"
+              />
+              День
+            </label>
+            <label for="time-nigth">
+              <input
+                type="checkbox"
+                class="time-selection-checkbox"
+                name="time-nigth"
+                id="nigth"
+              />
+              Ночь
+            </label>
           </article>
-          <button>Найти</button>
+          <button class="video-player_search-btn">Найти</button>
         </article>
       </section>
       <section class="menu">

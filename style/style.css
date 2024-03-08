@@ -10,8 +10,108 @@ body {
 
 .container {
   display: flex;
-  justify-content: space-between;
-  margin: 7vh 5vh;
+  gap: 5vh;
+  margin: 7vh 5vh 0;
+  width: calc(100% - 10vh);
+  height: fit-content;
+}
+
+.video-player_video-container {
+  width: 1200px;
+  aspect-ratio: 16/9;
+  background: red;
+  margin: 10vh 0 2vh;
+}
+
+.video-player_search {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.current-location {
+  width: 30%;
+}
+
+.current-location-header {
+  border-bottom: 2px solid rgb(247, 247, 247);
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.current-location ul {
+  list-style: none;
+}
+
+.current-location li {
+  margin: 5px 2vh;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.time-selection {
+  margin: 1vh 5vh 0;
+  display: flex;
+  gap: 2vh;
+}
+
+.time-selection label {
+  height: fit-content;
+  width: fit-content;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type=checkbox] {
+  width: 3em;
+  height: 3rem;
+  accent-color: rgb(247, 247, 247);
+}
+
+input[type=checkbox] {
+  appearance: none;
+  -webkit-appearance: none;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-size: 12px;
+  height: 25px;
+  width: 25px;
+  border: 3px solid rgb(247, 247, 247);
+  border-radius: 5px;
+  position: relative;
+}
+
+input[type=checkbox]::before {
+  content: "";
+  width: 1em;
+  height: 1em;
+  clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+  transform: scale(0);
+  background-color: rgb(247, 247, 247);
+  position: absolute;
+  top: 20%;
+}
+
+input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+
+input[type=checkbox]:hover {
+  color: black;
+}
+
+.video-player_search-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 60px;
+  background: transparent;
+  color: rgb(247, 247, 247);
+  font-size: 20px;
+  border: 2px solid rgb(247, 247, 247);
 }
 
 .menu {
@@ -46,6 +146,11 @@ body {
 .city-container {
   display: flex;
   justify-content: space-between;
+  transition-duration: 0.3s;
+}
+
+.city-container:hover {
+  background: rgb(119, 119, 119);
 }
 
 .city-info {
