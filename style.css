@@ -22,59 +22,42 @@ body {
   margin: 10vh 0 2vh;
 }
 
-.video-player_search {
+.video-info {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  position: relative;
 }
 
-.current-location {
-  width: 30%;
+.video-settings {
+  display: flex;
 }
 
-.current-location-header {
-  border-bottom: 2px solid rgb(247, 247, 247);
-  font-size: 30px;
-  font-weight: 500;
+.video-settings article {
+  width: 20%;
+  border-right: 2px solid white;
 }
 
-.current-location ul {
-  list-style: none;
-}
-
-.current-location li {
-  margin: 5px 2vh;
-  font-size: 18px;
-  font-weight: 100;
-}
-
-/*
 .time-selection {
-  margin: 1vh 5vh 0;
   display: flex;
-  gap: 2vh;
-  border: none;
+  justify-content: space-evenly;
 }
 
-.time-selection label {
-  height: fit-content;
-  width: fit-content;
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-*/
-
-.video-player_search-btn {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 10px 60px;
+.time-button {
+  width: 25%;
+  height: 25px;
+  font-size: 14px;
+  font-weight: bold;
   background: transparent;
-  color: rgb(247, 247, 247);
-  font-size: 20px;
-  border: 2px solid rgb(247, 247, 247);
+  color: white;
+  border: 2px solid white;
+  border-radius: 3px;
+  transition-duration: 0.3 / p0oi89k;
+}
+
+.time-button:hover {
+  background: white;
+  color: black;
+  border: 2px solid white;
 }
 
 .menu {
@@ -95,7 +78,7 @@ body {
 }
 
 .menu_title ul::first-line {
-  color: rgb(119, 119, 119);
+  color: gray;
 }
 
 .menu_city-selection {
@@ -140,5 +123,3 @@ body {
 .active {
   background: rgb(119, 119, 119);
 }
-
-/*# sourceMappingURL=style.css.map */

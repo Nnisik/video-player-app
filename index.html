@@ -4,67 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="container">
       <section class="video-player">
-        <video
-          class="video-player_video-container"
-          id="video-player"
-          autoplay
-          loop
-        >
-          <source
-            src="./assets/istockphoto-1270661910-640_adpp_is.mp4"
-            type="video/mp4"
-          />
+        <video class="video-player_video-container" id="video-player" autoplay loop>
+          <source src="./assets/istockphoto-1270661910-640_adpp_is.mp4" type="video/mp4"/>
         </video>
-        <article class="video-player_search">
-          <article class="current-location">
-            <h3 class="current-location-header">Город</h3>
-            <ul>
-              <li>Санкт-Петербург</li>
-            </ul>
-          </article>
-          <fieldset class="time-selection">
-            <!-- FIXME: currently it checks more than one option -->
-            <div>
-              <label for="time-morning">
-                <input
-                  type="radio"
-                  class="time-selection-checkbox"
-                  name="time-morning"
-                  id="morning"
-                />
-                Утро
-              </label>
-            </div>
-            <div>
-              <label for="time-day">
-                <input
-                  type="radio"
-                  class="time-selection-checkbox"
-                  name="time-day"
-                  id="day"
-                />
-                День
-              </label>
-            </div>
-            <div>
-              <label for="time-nigth">
-                <input
-                  type="radio"
-                  class="time-selection-checkbox"
-                  name="time-nigth"
-                  id="nigth"
-                />
-                Ночь
-              </label>
-            </div>
-          </fieldset>
-          <button class="video-player_search-btn">Найти</button>
-        </article>
+
+        <div class="video-info">
+          <h3 class="current-location-header">Город</h3>
+          <div class="video-settings">
+            <article class="current-location">
+              Санкт-Петербург
+            </article>
+            <article class="time-selection">
+              <!-- TODO: currently it checks more than one option -->
+              <button class="time-button" id="morning-btn">Утро</button>
+              <button class="time-button" id="day-btn">День</button>
+              <button class="time-button" id="nigth-btn">Ночь</button>
+            </article>
+          </div>
+        </div>
       </section>
       <section class="menu">
         <h1 class="menu_title">
@@ -75,7 +37,7 @@
           </ul>
         </h1>
         <ul class="menu_city-selection">
-          <li class="city-container active">
+          <li class="city-container">
             <div class="city-info">
               <h2 class="city-name">ТБИЛИСИ</h2>
               <p class="city-about">
@@ -108,6 +70,7 @@
         </ul>
       </section>
       <script src="./js/script.js"></script>
+      <script src="./js/city-function.js"></script>
     </div>
   </body>
 </html>
