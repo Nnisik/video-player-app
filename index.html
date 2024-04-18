@@ -9,13 +9,16 @@
   <body>
     <div class="container">
       <section class="video-player">
-        <img class="video-player_video-container" id="video-player" src="./assets/images/2673.jpg" alt="" />
+        <img
+          class="video-player_video-container"
+          id="video-player"
+          src="./assets/images/2673.jpg"
+          alt=""
+        />
         <div class="video-info">
           <h3 class="current-location-header">Город</h3>
           <div class="video-settings">
-            <article class="current-location">
-              Санкт-Петербург
-            </article>
+            <article class="current-location">Санкт-Петербург</article>
             <article class="time-selection">
               <!-- TODO: currently it checks more than one option -->
               <button class="time-button" id="morning-btn">Утро</button>
@@ -33,59 +36,10 @@
             <li>В ОКНО</li>
           </ul>
         </h1>
-        <ul class="menu_city-selection" id="spb">
-          <li class="city-container active"  data-img="./assets/images/2673.jpg">
-            <div class="city-info">
-              <h2 class="city-name">Санкт-Петербург</h2>
-              <p class="city-about">
-                Вот, что видит кто-то из команды Практикума, когда не смотрит на
-                код, а смотрит в окно.
-              </p>
-            </div>
-            <img class="city-img" src="./assets/images/2673.jpg" alt="" />
-          </li>
-          <li class="city-container" id="batumi" data-img="./assets/images/aerial-drone-view-batumi-georgia-old-modern-buildings-greenery-roads-mountains.jpg">
-            <div class="city-info">
-              <h2 class="city-name">БАТУМИ</h2>
-              <p class="city-about">
-                Вот, что видит кто-то из команды Практикума, когда не смотрит на
-                код, а смотрит в окно.
-              </p>
-            </div>
-            <img class="city-img" src="./assets/images/aerial-drone-view-batumi-georgia-old-modern-buildings-greenery-roads-mountains.jpg" alt="" />
-          </li>
-          <li class="city-container" id="tbilisi" data-img="./assets/images/streets-old-city-selective-background-ivy-old-tbilisi-idea-background-advertisement-about-city-travel.jpg">
-            <div class="city-info">
-              <h2 class="city-name">ТБИЛИСИ</h2>
-              <p class="city-about">
-                Вот, что видит кто-то из команды Практикума, когда не смотрит на
-                код, а смотрит в окно.
-              </p>
-            </div>
-            <img class="city-img" src="./assets/images/streets-old-city-selective-background-ivy-old-tbilisi-idea-background-advertisement-about-city-travel.jpg" alt="" />
-          </li>
-          <li class="city-container" id="moscow" data-img="./assets/images/christ-savior-cathedral-moscow.jpg">
-            <div class="city-info">
-              <h2 class="city-name">МОСКВА</h2>
-              <p class="city-about">
-                Вот, что видит кто-то из команды Практикума, когда не смотрит на
-                код, а смотрит в окно.
-              </p>
-            </div>
-            <img class="city-img" src="./assets/images/christ-savior-cathedral-moscow.jpg" alt="" />
-          </li>
-          <li class="city-container" id="oryol" data-img="">
-            <div class="city-info">
-              <h2 class="city-name">ОРЁЛ</h2>
-              <p class="city-about">
-                Вот, что видит кто-то из команды Практикума, когда не смотрит на
-                код, а смотрит в окно.
-              </p>
-            </div>
-            <img class="city-img" src="" alt="" />
-          </li>
+        <ul class="menu_city-selection" id="city-selection">
         </ul>
       </section>
+      <script src="./js/cities.js"></script>
       <script src="./js/city-function.js"></script>
     </div>
   </body>

@@ -16,8 +16,7 @@ const videoPlayer = document.querySelector("#video-player");
 let cityContainers = document.querySelectorAll(".city-container");
 cityContainers.forEach(function(city) {
     city.addEventListener("click", function() {
-        let image = city.dataset.img;
-        document.querySelector("#video-player").src = image;
+        document.querySelector("#video-player").src = city.dataset.img;
         removeActiveFromAllElements();
         city.classList.toggle("active");
     });
