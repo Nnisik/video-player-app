@@ -1,183 +1,142 @@
-$black: rgb(20, 20, 20);
-$white: rgb(247, 247, 247);
-$grey: rgb(119, 119, 119);
-
 * {
     margin: 0;
     padding: 0;
-}
-
-body {
-    background: $black;
-    color: $white;
-}
-/*
-input[type="radio"] {
-    width: 3em;
-    height: 3rem;
-    accent-color: $white;
-}
-
-input[type="radio"] {
-    appearance: none;
-    -webkit-appearance: none;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    font-size: 12px;
-    height: 25px;
-    width: 25px;
-    border: 3px solid $white;
-    border-radius: 5px;
-    position: relative;
-}
-
-input[type="radio"]::before {
-    content: "";
-    width: 1em;
-    height: 1em;
-    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
-    transform: scale(0);
-    background-color: $white;
-    position: absolute;
-    top: 20%;
-}
-
-input[type="radio"]:checked::before {
-    transform: scale(1);
-}
-
-input[type="radio"]:hover {
-    color: black;
-}
-*/
-.container {
+  }
+  
+  body {
+    background: rgb(20, 20, 20);
+    color: rgb(247, 247, 247);
+  }
+  
+  .container {
     display: flex;
     gap: 5vh;
     margin: 7vh 5vh 0;
-    width: calc(100% - 5vh * 2);
+    width: calc(100% - 10vh);
     height: fit-content;
-}
-
-.video-player_video-container {
+  }
+  
+  .video-player_video-container {
     width: 1200px;
     aspect-ratio: 16/9;
     margin: 10vh 0 2vh;
-}
-
-.video-player_search {
+  }
+  
+  .video-info {
     display: flex;
+    flex-direction: column;
     width: 100%;
-    position: relative;
-}
-
-.current-location {
-    width: 30%;
-}
-
-.current-location-header {
-    border-bottom: 2px solid $white;
-    font-size: 30px;
-    font-weight: 500;
-}
-
-.current-location ul {
-    list-style: none;
-}
-
-.current-location li {
-    margin: 5px 2vh;
-    font-size: 18px;
-    font-weight: 100;
-}
-
-.time-selection {
-    margin: 1vh 5vh 0;
+  }
+  
+  .video-settings {
     display: flex;
-    gap: 2vh;
-    border: none;
-}
-
-.time-selection label {
-    height: fit-content;
-    width: fit-content;
-    font-size: 20px;
+  }
+  
+  .video-settings article {
+    width: 20%;
+    border-right: 2px solid white;
+  }
+  
+  .time-selection {
     display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.video-player_search-btn {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 10px 60px;
+    justify-content: space-evenly;
+  }
+  
+  .time-button {
+    width: 25%;
+    height: 25px;
+    font-size: 14px;
+    font-weight: bold;
     background: transparent;
-    color: $white;
-    font-size: 20px;
-    border: 2px solid $white;
-}
-
-.menu {
+    color: white;
+    border: 2px solid white;
+    border-radius: 3px;
+    transition-duration: 0.3 / p0oi89k;
+  }
+  
+  .time-button:hover {
+    background: white;
+    color: black;
+    border: 2px solid white;
+  }
+  
+  .menu {
     display: flex;
     flex-direction: column;
     height: fit-content;
     width: 30%;
-}
-
-.menu_title {
+  }
+  
+  .menu_title {
     font-size: 100px;
     height: fit-content;
-}
-
-.menu_title ul {
+  }
+  
+  .menu_title ul {
     list-style: none;
     line-height: 80%;
-}
-
-.menu_title ul::first-line {
-    color: $grey;
-}
-
-.menu_city-selection {
+  }
+  
+  .menu_title ul::first-line {
+    color: gray;
+  }
+  
+  .menu_city-selection {
     margin: 5vh 0;
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 20px;
-}
-
-.city-container {
+    max-height: 500px;
+    overflow-y: scroll;
+  }
+  
+  .menu_city-selection::-webkit-scrollbar {
+      width: 3px;
+  }
+  
+  .menu_city-selection::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); 
+      border-radius: 10px;
+  }
+  
+  .menu_city-selection::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.5); 
+  }
+  
+  .city-container {
     display: flex;
     justify-content: space-between;
     transition-duration: 0.3s;
-}
-
-.city-container:hover {
-    background: $grey;
-}
-
-.city-info {
+  }
+  
+  .city-container:hover {
+    background: rgba(119, 119, 119, 0.5);
+  }
+  
+  .city-info {
     width: 50%;
     height: 100%;
-}
-
-.city-name {
+  }
+  
+  .city-name {
     font-size: 45px;
-}
-
-.city-about {
+  }
+  
+  .city-about {
     margin: 5px 0;
     width: 90%;
     font-size: 16px;
-}
-
-.city-img {
+  }
+  
+  .city-img {
     width: 50%;
     aspect-ratio: 16/9;
     background-color: red;
-}
-
-.active {
-    background: $grey;
-}
+  }
+  
+  .active {
+    background: rgb(119, 119, 119);
+  }
+  
