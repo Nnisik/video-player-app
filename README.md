@@ -10,10 +10,14 @@
 ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
 
 ### TODO
-* Change image displaying to video
-* More select options
-  * different time options
-* Add city search
+* fix current issues
+* remove micro ui misses 
+  * no previous searches
+* Project documentation
 
 ### Issues
-* auto drawn city selection options aren't working with changing main image
+* after searching, result video does not appear on screen
+
+### Future Improvements
+* Testing
+* Redux for most popular searches

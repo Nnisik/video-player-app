@@ -9,16 +9,15 @@
   <body>
     <div class="container">
       <section class="video-player">
-        <img
+        <video
           class="video-player_video"
           id="video-player"
-          src="../src/assets/images/2673.jpg"
-          alt=""
-        />
+          src=""
+        ></video>
         <div class="video-info">
           <div class="location">
             <p class="location-header">Город</p>
-            <h3 id="current-location">Санкт-Петербург</h3>
+            <h3 id="current-location"></h3>
           </div>
           <!--
           <div class="video-settings">
@@ -35,6 +34,10 @@
           <p class="logo_first-line">ПО-</p>
           <p>СМОТРИ</p>
           <p>В ОКНО</p>
+        </div>
+        <div class="search-container">
+          <input type="text" id="search-field" name="search-field" />
+          <button id="search-button">search</button>
         </div>
         <ul id="city-selection">
           <li class="city-container active" data-img="./assets/images/2673.jpg" data-city="Санкт-Петербург">
