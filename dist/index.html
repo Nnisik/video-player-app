@@ -4,47 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../src/style/style.css" />
+    <link rel="stylesheet" href="../src/style/restyle.css" />
   </head>
   <body>
     <div class="container">
       <section class="video-player">
         <img
-          class="video-player_video-container"
+          class="video-player_video"
           id="video-player"
           src="../src/assets/images/2673.jpg"
           alt=""
         />
         <div class="video-info">
-          <h3 class="current-location-header">Город</h3>
+          <div class="location">
+            <p class="location-header">Город</p>
+            <h3 id="current-location">Санкт-Петербург</h3>
+          </div>
+          <!--
           <div class="video-settings">
-            <article id="current-location">Санкт-Петербург</article>
             <article class="time-selection">
-              <!-- TODO: currently it checks more than one option -->
               <button class="time-button" id="morning-btn">Утро</button>
               <button class="time-button" id="day-btn">День</button>
-              <button class="time-button" id="nigth-btn">Ночь</button>
+              <button class="time-button" id="night-btn">Ночь</button>
             </article>
-          </div>
+          </div> -->
         </div>
       </section>
       <section class="menu">
-        <h1 class="menu_title">
-          <ul>
-            <li>ПО-</li>
-            <li>СМОТРИ</li>
-            <li>В ОКНО</li>
-          </ul>
-        </h1>
-        <ul class="menu_city-selection" id="city-selection">
+        <div class="logo">
+          <p class="logo_first-line">ПО-</p>
+          <p>СМОТРИ</p>
+          <p>В ОКНО</p>
+        </div>
+        <ul id="city-selection">
           <li class="city-container active" data-img="./assets/images/2673.jpg" data-city="Санкт-Петербург">
-            <div class="city-info">
-              <h2 class="city-name">САНКТ-ПЕТЕРБУГР</h2>
-              <p class="city-about">
-                Вот, что видит кто-то из команды Практикума, когда не смотрит на
-                код, а смотрит в окно.
-              </p>
-            </div>
+            <h2 class="city-name">САНКТ-ПЕТЕРБУГР</h2>
             <img class="city-img" src="../src/assets/images/2673.jpg" alt="" />
           </li>
           <li
@@ -52,13 +46,7 @@
             data-img="./assets/images/aerial-drone-view-batumi-georgia-old-modern-buildings-greenery-roads-mountains.jpg"
             data-city="Батуми"
           >
-            <div class="city-info">
-              <h2 class="city-name">БАТУМИ</h2>
-              <p class="city-about">
-                Вот, что видит кто-то из команды Практикума, когда не смотрит на
-                код, а смотрит в окно.
-              </p>
-            </div>
+            <h2 class="city-name">БАТУМИ</h2>
             <img
               class="city-img"
               src="../src/assets/images/aerial-drone-view-batumi-georgia-old-modern-buildings-greenery-roads-mountains.jpg"
@@ -70,13 +58,7 @@
             data-img="./assets/images/streets-old-city-selective-background-ivy-old-tbilisi-idea-background-advertisement-about-city-travel.jpg"
             data-city="Тбилиси"
           >
-            <div class="city-info">
-              <h2 class="city-name">ТБИЛИСИ</h2>
-              <p class="city-about">
-                Вот, что видит кто-то из команды Практикума, когда не смотрит на
-                код, а смотрит в окно.
-              </p>
-            </div>
+            <h2 class="city-name">ТБИЛИСИ</h2>
             <img
               class="city-img"
               src="../src/assets/images/streets-old-city-selective-background-ivy-old-tbilisi-idea-background-advertisement-about-city-travel.jpg"
@@ -88,13 +70,7 @@
             data-img="./assets/images/christ-savior-cathedral-moscow.jpg"
             data-city="Москва"
           >
-            <div class="city-info">
-              <h2 class="city-name">МОСКВА</h2>
-              <p class="city-about">
-                Вот, что видит кто-то из команды Практикума, когда не смотрит на
-                код, а смотрит в окно.
-              </p>
-            </div>
+            <h2 class="city-name">МОСКВА</h2>
             <img
               class="city-img"
               src="../src/assets/images/christ-savior-cathedral-moscow.jpg"
@@ -103,8 +79,7 @@
           </li>
         </ul>
       </section>
-      <!-- <script src="./js/cities.js"></script> -->
-      <script src="main.js"></script>
+      <script src="./main.js"></script>
     </div>
   </body>
 </html>
