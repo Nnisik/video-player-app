@@ -15,6 +15,7 @@
     "webpack-cli": "^6.0.1"
   },
   "dependencies": {
+    "dotenv": "^16.4.7",
     "pexels": "^1.4.0"
   }
 }

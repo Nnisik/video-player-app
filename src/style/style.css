@@ -44,6 +44,30 @@ body {
 
 .video-player_video {
   width: 100%;
+  position: relative;
+  border: 1px solid white;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: darkolivegreen;
+    content: "*";
+    z-index: 100;
+  }
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background: darkolivegreen;
+    content: "*";
+    z-index: 100;
+  }
 }
 
 .video-info {
@@ -81,7 +105,7 @@ body {
 
 .menu {
   width: 25%;
-  transform: translateY(-33px);
+  transform: translateY(-5px);
 }
 
 .logo {
@@ -133,6 +157,7 @@ body {
   gap: 16px;
   max-height: 300px;
   overflow-y: scroll;
+  cursor: pointer;
 }
 
 .city-container {
