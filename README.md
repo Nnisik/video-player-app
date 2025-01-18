@@ -64,7 +64,7 @@ To get a local copy of this project up and running, follow these steps:
 * Project documentation
 
 ### Known Issues
-* 
+* currently doesn't work on github pages
 
 ## Future Improvements
 * Testing
