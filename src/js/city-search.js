@@ -1,11 +1,45 @@
-import setVideo from "./video-player";
+import {clearSearchGallery, fillSearchGallery, setNewVideoTitle, setVideoIntoPlayer} from "./ui";
+import {client} from "./utils/API-connect";
 import capitalizeFirstLetter from "./utils/capitalise-first-letter";
-import {setNewVideoTitle} from "./ui";
+
+function getVideos(cityTitle) {
+    const query = cityTitle;
+    client.videos.search({ query })
+        .then((data) => {
+            return data.videos;
+        })
+        .then((data) => {
+            // set own video list
+            const videoList = [];
+            data.forEach(video => {
+                videoList.push({
+                    id: video.id,
+                    title: capitalizeFirstLetter(query),
+                    image: video.image,
+                    file: {
+                        quality: video.video_files[0].quality,
+                        link: video.video_files[0].link
+                    }
+                })
+            });
+            return videoList;
+        })
+        .then((data) => {
+            clearSearchGallery();
+            data.forEach((video) => {
+                fillSearchGallery(video);
+            });
+            setVideoIntoPlayer(data[0].file.link);
+        })
+        .catch((err) => {
+            console.log(err);
+        })
+}
 
 const searchInput = document.getElementById("search-field");
 
 export function getCity() {
     let searchValue = searchInput.value;
     setNewVideoTitle(capitalizeFirstLetter(searchValue));
-    setVideo(searchValue);
+    getVideos(searchValue);
 }
