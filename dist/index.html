@@ -8,22 +8,16 @@
   </head>
   <body>
     <div class="container">
-      <section class="video-player">
-        <video autoplay class="video-player_video" id="video-player">
+      <section class="player">
+        <video
+                autoplay loop muted
+                id="video-player">
         </video>
         <div class="video-info">
           <div class="location">
             <p class="location-header">Город</p>
             <h3 id="current-location"></h3>
           </div>
-          <!--
-          <div class="video-settings">
-            <article class="time-selection">
-              <button class="time-button" id="morning-btn">Утро</button>
-              <button class="time-button" id="day-btn">День</button>
-              <button class="time-button" id="night-btn">Ночь</button>
-            </article>
-          </div> -->
         </div>
       </section>
       <section class="menu">
@@ -37,46 +31,6 @@
           <button id="search-button">search</button>
         </div>
         <ul id="city-selection">
-          <li class="city-container active" data-img="./assets/images/2673.jpg" data-city="Санкт-Петербург">
-            <h2 class="city-name">САНКТ-ПЕТЕРБУГР</h2>
-            <img class="city-img" src="../src/assets/images/2673.jpg" alt="" />
-          </li>
-          <li
-            class="city-container"
-            data-img="./assets/images/aerial-drone-view-batumi-georgia-old-modern-buildings-greenery-roads-mountains.jpg"
-            data-city="Батуми"
-          >
-            <h2 class="city-name">БАТУМИ</h2>
-            <img
-              class="city-img"
-              src="../src/assets/images/aerial-drone-view-batumi-georgia-old-modern-buildings-greenery-roads-mountains.jpg"
-              alt=""
-            />
-          </li>
-          <li
-            class="city-container"
-            data-img="./assets/images/streets-old-city-selective-background-ivy-old-tbilisi-idea-background-advertisement-about-city-travel.jpg"
-            data-city="Тбилиси"
-          >
-            <h2 class="city-name">ТБИЛИСИ</h2>
-            <img
-              class="city-img"
-              src="../src/assets/images/streets-old-city-selective-background-ivy-old-tbilisi-idea-background-advertisement-about-city-travel.jpg"
-              alt=""
-            />
-          </li>
-          <li
-            class="city-container"
-            data-img="./assets/images/christ-savior-cathedral-moscow.jpg"
-            data-city="Москва"
-          >
-            <h2 class="city-name">МОСКВА</h2>
-            <img
-              class="city-img"
-              src="../src/assets/images/christ-savior-cathedral-moscow.jpg"
-              alt=""
-            />
-          </li>
         </ul>
       </section>
       <script src="./main.js"></script>
