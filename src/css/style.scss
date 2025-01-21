@@ -1,6 +1,6 @@
 $bgcolor: rgb(20, 20, 20);
 $textcolor: rgb(240, 240, 240);
-$acsentcolor: rgb(155, 155, 155);
+$acsentcolor: rgb(200, 200, 200);
 $ligthacsentcolor: rgba(155, 155, 155, 0.5);
 
 :root {
@@ -24,8 +24,8 @@ ul {
 }
 
 body {
-  background: black;
-  color: white;
+  background: $bgcolor;
+  color: $textcolor;
   max-height: 100vh;
   display: flex;
 }
@@ -43,12 +43,22 @@ body {
   transform: translateY(15%);
 }
 
-.video-player {
+.player {
   width: 75%;
 }
 
-.video-player_video {
+#video-player {
   width: 100%;
+  position: relative;
+  border: 1px solid $textcolor;
+
+  &::before,
+  &::after {
+    content: "Read this -";
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+  }
 }
 
 .video-info {
@@ -86,7 +96,7 @@ body {
 
 .menu {
   width: 25%;
-  transform: translateY(-33px);
+  transform: translateY(30px);
 }
 
 .logo {
@@ -94,19 +104,52 @@ body {
   line-height: 80%;
   font-weight: bold;
   letter-spacing: 2px;
-  margin-bottom: 32px;
+  margin: 16px 0;
 }
 
 .logo_first-line {
   color: grey;
 }
 
+.search-container {
+  margin: 8px 0;
+  border: 1px solid grey;
+  background: rgba(122, 122, 122, 0.3);
+  transition-duration: 0.3s;
+
+  &:hover {
+    background: rgba(222, 222, 222, 0.5);
+  }
+}
+
+#search-field {
+  width: 75%;
+  background: none;
+  outline: none;
+  border: none;
+  padding: 4px;
+  color: white;
+  font-size: var(--text-size);
+}
+
+#search-button {
+  width: 15%;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: var(--text-size);
+  cursor: pointer;
+}
+
 #city-selection {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  max-height: 300px;
+  height: 300px;
   overflow-y: scroll;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .city-container {

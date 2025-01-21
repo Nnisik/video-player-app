@@ -2,6 +2,18 @@ import {clearSearchGallery, fillSearchGallery, setNewVideoTitle, setVideoIntoPla
 import {client} from "./utils/API-connect";
 import capitalizeFirstLetter from "./utils/capitalise-first-letter";
 
+function buildDataSet(videoData, title) {
+    return {
+        id: videoData.id,
+        title: capitalizeFirstLetter(title),
+        image: videoData.image,
+        file: {
+            quality: videoData.video_files[0].quality,
+            link: videoData.video_files[0].link
+        }
+    };
+}
+
 function getVideos(cityTitle) {
     const query = cityTitle;
     client.videos.search({ query })
@@ -12,15 +24,7 @@ function getVideos(cityTitle) {
             // set own video list
             const videoList = [];
             data.forEach(video => {
-                videoList.push({
-                    id: video.id,
-                    title: capitalizeFirstLetter(query),
-                    image: video.image,
-                    file: {
-                        quality: video.video_files[0].quality,
-                        link: video.video_files[0].link
-                    }
-                })
+                videoList.push(buildDataSet(video, query));
             });
             return videoList;
         })
