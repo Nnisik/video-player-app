@@ -58,10 +58,11 @@ To get a local copy of this project up and running, follow these steps:
 3. **...**
 
 ### TODO
-* switch videos on select from the gallery
 * remove micro ui misses 
   * no previous searches
 * Project documentation
+* size down possible searches only to names of cities
+* funish translation of a page
 
 ### Known Issues
 * currently doesn't work on github pages
