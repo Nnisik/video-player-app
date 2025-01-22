@@ -38,6 +38,7 @@ To get a local copy of this project up and running, follow these steps:
 
 ## Folder Structure
 Here's a simple breakdown of the folder structure of this project:
+
     ```graphql
     portfolio-project/          
     ├── dist/
