@@ -1,5 +1,5 @@
-const searchGallery = document.getElementById("city-selection");
-const videoPlayer = document.getElementById("video-player");
+import {setVideoIntoPlayer} from "./video-player";
+import {locationHeader, searchGallery} from "./utils/elements-links";
 
 export function clearSearchGallery() {
     searchGallery.innerHTML = "";
@@ -35,20 +35,6 @@ export function fillSearchGallery(video) {
     searchGallery.appendChild(videoSelectContainer);
 }
 
-export function setVideoIntoPlayer(videoLink) {
-    // Check if the video element exists
-    if (!videoPlayer) {
-        console.error("No video element found");
-        return;
-    }
-    // Update the video source
-    videoPlayer.src = videoLink;
-    // Reload the video to apply the new source
-    videoPlayer.load();
-    // Optionally, play the video immediately
-    videoPlayer.play();
-}
-
 export function setNewVideoTitle(newTitle) {
-    document.getElementById("current-location").innerText = newTitle;
+    locationHeader.innerText = newTitle;
 }

@@ -1,6 +1,8 @@
-import {clearSearchGallery, fillSearchGallery, setNewVideoTitle, setVideoIntoPlayer} from "./ui";
+import {clearSearchGallery, fillSearchGallery, setNewVideoTitle} from "./ui";
 import {client} from "./utils/API-connect";
 import capitalizeFirstLetter from "./utils/capitalise-first-letter";
+import {setVideoIntoPlayer} from "./video-player";
+import {searchInput} from "./utils/elements-links";
 
 function buildDataSet(videoData, title) {
     return {
@@ -39,8 +41,6 @@ function getVideos(cityTitle) {
             console.log(err);
         })
 }
-
-const searchInput = document.getElementById("search-field");
 
 export function getCity() {
     let searchValue = searchInput.value;
