@@ -48,7 +48,7 @@ Here's a simple breakdown of the folder structure of this project:
     │   ├── images/               
     │   └── videos/               
     ├── src/
-    │   ├── style/
+    │   ├── css/
     │   │   └── style.scss        # Styles for the website (including light/dark themes)
     │   ├── js/            
     │   │   ├── utils/
