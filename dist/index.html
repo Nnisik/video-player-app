@@ -9,10 +9,7 @@
   <body>
     <div class="container">
       <section class="player">
-        <video
-                autoplay loop muted
-                id="video-player">
-        </video>
+        <video autoplay loop muted id="video-player"></video>
         <div class="video-info">
           <div class="location">
             <p class="location-header">Город</p>
@@ -27,7 +24,7 @@
           <p>В ОКНО</p>
         </div>
         <div class="search-container">
-          <input type="text" id="search-field" name="search-field" />
+          <input type="text" id="search-field" name="search-field" autocomplete="off" />
           <button id="search-button">search</button>
         </div>
         <ul id="city-selection">
