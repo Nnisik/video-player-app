@@ -5,10 +5,9 @@
 ![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
 
 ## Table of Contents
-- [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Folder Structure](#folder-structure)
 - [Getting Started](#getting-started)
+- [Folder Structure](#folder-structure)
 - [Known Issues](#known-issues)
 - [Future Improvements](#future-improvements)
 
@@ -18,9 +17,27 @@
 * HTML
 * Webpack
 
+## Getting Started
+To get a local copy of this project up and running, follow these steps:
+1. **Clone the repository:**
+   ```bash
+   https://github.com/Nnisik/video-player-app.git
+2. **Navigate to the project directory:**
+   ```bash
+   cd video-player-app
+3. **Install required node modules: **
+   ```bash
+   npm install
+4. **Generate css file for project:**
+   ```bash
+   sass --watch src/css/style.scss dist/style.css
+5. **Set up single JavaScript file:**
+   ```bash
+   npm start
+6. **Run <i>index.html</i> in your local browser**
+
 ## Folder Structure
 Here's a simple breakdown of the folder structure of this project:
-
     ```graphql
     portfolio-project/          
     ├── dist/
@@ -46,23 +63,10 @@ Here's a simple breakdown of the folder structure of this project:
     ├── README.md
     └── webpack.config.js
 
-## Getting Started
-To get a local copy of this project up and running, follow these steps:
-
-1. **Clone the repository:**
-   ```bash
-   https://github.com/Nnisik/video-player-app.git
-2. **Navigate to the project directory:**
-   ```bash
-   cd video-player-app
-3. **...**
-
 ### TODO
-* remove micro ui misses 
-  * no previous searches
-* Project documentation
 * size down possible searches only to names of cities
-* funish translation of a page
+* finish translation of a page
+* loaders
 
 ### Known Issues
 * currently doesn't work on github pages
