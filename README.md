@@ -66,11 +66,10 @@ Here's a simple breakdown of the folder structure of this project:
 
 ### TODO
 * size down possible searches only to names of cities
-* finish translation of a page
-* loaders
 
 ### Known Issues
 * currently doesn't work on github pages
+* if search includes vertical videos, layout brokes
 
 ## Future Improvements
 * Testing
