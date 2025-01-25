@@ -23,6 +23,12 @@ ul {
   font-size: var(--text-size);
 }
 
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
 body {
   background: $bgcolor;
   color: $textcolor;
@@ -33,7 +39,7 @@ body {
 .container {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: start;
   width: calc(100% - 2 * 32px - 16px);
   max-width: 1200px;
   font-size: var(--text-size);
@@ -49,16 +55,9 @@ body {
 
 #video-player {
   width: 100%;
+  aspect-ratio: 16/9;
   position: relative;
   border: 1px solid $textcolor;
-
-  &::before,
-  &::after {
-    content: "Read this -";
-    background-color: yellow;
-    color: red;
-    font-weight: bold;
-  }
 }
 
 .video-info {
@@ -96,7 +95,6 @@ body {
 
 .menu {
   width: 25%;
-  transform: translateY(30px);
 }
 
 .logo {
@@ -146,10 +144,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  height: 300px;
+  height: 320px;
   overflow-y: scroll;
   cursor: pointer;
-  background: rgba(255, 255, 255, 0.1);
 }
 
 .city-container {

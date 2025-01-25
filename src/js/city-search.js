@@ -26,7 +26,9 @@ function getVideos(cityTitle) {
             // set own video list
             const videoList = [];
             data.forEach(video => {
-                videoList.push(buildDataSet(video, query));
+                if (video.height < video.width) {
+                    videoList.push(buildDataSet(video, query));
+                }
             });
             return videoList;
         })

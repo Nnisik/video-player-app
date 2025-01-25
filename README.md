@@ -69,7 +69,6 @@ Here's a simple breakdown of the folder structure of this project:
 
 ### Known Issues
 * currently doesn't work on github pages
-* if search includes vertical videos, layout brokes
 
 ## Future Improvements
 * Testing

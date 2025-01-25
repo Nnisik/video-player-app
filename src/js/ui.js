@@ -5,10 +5,10 @@ export function clearSearchGallery() {
     searchGallery.innerHTML = "";
 }
 
-function galleryElementHeader(id, title) {
+function galleryElementHeader(title) {
     const videoHeader = document.createElement("h2");
     videoHeader.classList.add("city-name");
-    videoHeader.innerText = `${title} - ${id}`;
+    videoHeader.innerText = `${title}`;
     return videoHeader;
 }
 
@@ -29,7 +29,7 @@ export function fillSearchGallery(video) {
         setVideoIntoPlayer(video.file.link);
     });
     // search header
-    videoSelectContainer.append(galleryElementHeader(video.id, video.title));
+    videoSelectContainer.append(galleryElementHeader(video.title));
     // video poster
     videoSelectContainer.append(galleryElementPoster(video.id, video.image));
     searchGallery.appendChild(videoSelectContainer);
