@@ -70,9 +70,14 @@ Here's a simple breakdown of the folder structure of this project:
 * size down possible searches only to names of cities
 
 ### Known Issues
-* currently doesn't work on github pages
+* no marking of a currently playing videos in video list
 
 ## Future Improvements
+### Optimization
 * transition too Typescript
 * Testing
 * Redux for most popular searches
+
+### UI changes
+* trending searches (requires Redux) 
+* some info about searched place
