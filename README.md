@@ -4,7 +4,7 @@
 ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)</br>
 ![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
 
-Take a Look is an interactive web application designed to enhance the user experience of discovering videos based on city searches. The application dynamically fetches video content using a client API and allows users to search for cities, view related videos, and interact with a gallery of results. The project features a responsive interface, a live video player, and seamless integration between user inputs and video content.
+«Take a Look» is an interactive web application designed to give a look into difference places of our planet with a hello of a short videos. The application dynamically fetches video content using a client API and allows users to search for cities, view related videos, and interact with a gallery of results. 
 
 ## Table of Contents
 - [Technologies Used](#technologies-used)
@@ -73,5 +73,6 @@ Here's a simple breakdown of the folder structure of this project:
 * currently doesn't work on github pages
 
 ## Future Improvements
+* transition too Typescript
 * Testing
 * Redux for most popular searches
