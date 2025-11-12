@@ -1,7 +1,7 @@
 /node_modules/
 /.env
 /dist/main.js
-/dist/style.css
-/dist/style.css.map
+/dist/src/style/style.css
+/dist/src/style/style.css.map
 /src/js/utils/constant.js
 /index.js
