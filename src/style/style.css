@@ -90,9 +90,6 @@ body {
   line-height: 75%;
 }
 
-
-/*////////////////////////////////*/
-
 .menu {
   width: 25%;
   margin-left: 1vw;
@@ -139,6 +136,25 @@ body {
   color: white;
   font-size: var(--text-size);
   cursor: pointer;
+}
+
+.popular-searches-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pop-search_option {
+    width: fit-content;
+    padding: 3px 10px;
+    border: 2px solid var(--text-color);
+    border-radius: 15px;
+    margin: 0 10px 10px 0;
+    transition-duration: 0.6s;
+}
+
+.pop-search_option:hover {
+    border: 2px dotted var(--text-color);
+    background: var(--light-acsent-color);
 }
 
 #city-selection {
