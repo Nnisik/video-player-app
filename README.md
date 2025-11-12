@@ -41,14 +41,7 @@ To get a local copy of this project up and running, follow these steps:
 ## Folder Structure
 Here's a simple breakdown of the folder structure of this project:
 
-    ```graphql
-    portfolio-project/          
-    ├── dist/
-    │   └── index.html            # The main HTML file
-    ├── public/
-    │   ├── assets/               
-    │   ├── images/               
-    │   └── videos/               
+    portfolio-project/             
     ├── src/
     │   ├── css/
     │   │   └── style.scss        # Styles for the website (including light/dark themes)
@@ -60,7 +53,8 @@ Here's a simple breakdown of the folder structure of this project:
     │   │   ├── ui.js
     │   │   └── video-player.js
     │   └── index.js 
-    ├── .gitignore
+    ├── .gitignore        
+    ├── index.html                # The main HTML file
     ├── package.json
     ├── package-lock.json
     ├── README.md

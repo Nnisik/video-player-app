@@ -11,12 +11,21 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.83.4",
-    "webpack": "^5.97.1",
+    "sass": "^1.94.0",
+    "typescript": "^5.9.3",
+    "webpack": "^5.102.1",
     "webpack-cli": "^6.0.1"
   },
   "dependencies": {
     "dotenv": "^16.4.7",
     "pexels": "^1.4.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nnisik/video-player-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Nnisik/video-player-app/issues"
+  },
+  "homepage": "https://github.com/Nnisik/video-player-app#readme"
 }
