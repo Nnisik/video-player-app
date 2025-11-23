@@ -1,10 +1,10 @@
 # Video Player
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)</br>
 ![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
 
-«Take a Look» is an interactive web application designed to give a look into difference places of our planet with a hello of a short videos. The application dynamically fetches video content using a client API and allows users to search for cities, view related videos, and interact with a gallery of results. 
+It is an interactive web application designed to give a look into difference places of our planet with a hello of a short videos. The application dynamically fetches video content using a client API and allows users to search for cities, view related videos, and interact with a gallery of results. 
 
 ## Table of Contents
 - [Technologies Used](#technologies-used)
@@ -39,9 +39,8 @@ To get a local copy of this project up and running, follow these steps:
 6. **Run <i>index.html</i> in your local browser**
 
 ## Folder Structure
-Here's a simple breakdown of the folder structure of this project:
 
-    ```graphql
+    ```
     portfolio-project/          
     ├── dist/
     │   └── index.html            # The main HTML file
@@ -70,14 +69,8 @@ Here's a simple breakdown of the folder structure of this project:
 * size down possible searches only to names of cities
 
 ### Known Issues
-* no marking of a currently playing videos in video list
+*currenty found nothing
 
-## Future Improvements
-### Optimization
-* transition too Typescript
-* Testing
-* Redux for most popular searches
-
-### UI changes
-* trending searches (requires Redux) 
-* some info about searched place
+### Future changes to add 
+* add trending searches section under search bar
+* show some information about searched place under the video
