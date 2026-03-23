@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.videoPlayer {
+    aspect-ratio: 16/9;
+    height: 70vh;
+    border: 1px solid #eee;
+}
+
+.videoDescription {
+    padding: 0 12px;
+    min-width: 150px;
+    width: fit-content;
+    border-right: 5px solid #eee;
+}
+
+.searchContainer {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    gap: 12px;
+    height: 79vh;
+    width: 305px;
+}
+
+.searchForm {
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.15);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+
+
+    & input {
+        width: 75%;
+        height: 100%;
+        outline: none;
+        background: transparent;
+        border-radius: 6px;
+        padding: 0 12px;
+        border: none;
+    }
+
+    & button {
+        width: 20%;
+        padding: 0;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.35));
+    }
+}
+
+.search_resultsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 320px;
+    overflow-y: scroll;
+    width: 310px;
+}
+
+.cityElem {
+    background: rgba(255, 255, 255, 0.15);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    aspect-ratio: 30/9;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition-duration: 0.3s;
+    cursor: pointer;
+
+    & > div {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.3);
+    }
+}
